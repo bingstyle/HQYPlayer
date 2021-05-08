@@ -31,7 +31,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'HQYPlayer/Classes/**/*'
-  
   # s.resource_bundles = {
   #   'HQYPlayer' => ['HQYPlayer/Assets/*.png']
   # }
@@ -39,5 +38,19 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'IJKMediaFramework'
-  s.dependency 'TXLiteAVSDK_UGC'
+  s.default_subspec = 'TXLiteAVSDK_UGC'
+  
+  s.subspec "TXLiteAVSDK_Player" do |ss|
+      ss.dependency 'TXLiteAVSDK_Player'
+  end
+  s.subspec "TXLiteAVSDK_Smart" do |ss|
+      ss.dependency 'TXLiteAVSDK_Smart'
+  end
+  s.subspec "TXLiteAVSDK_Professional" do |ss|
+      ss.dependency 'TXLiteAVSDK_Professional'
+  end
+  s.subspec "TXLiteAVSDK_UGC" do |ss|
+      ss.dependency 'TXLiteAVSDK_UGC'
+  end
+  
 end

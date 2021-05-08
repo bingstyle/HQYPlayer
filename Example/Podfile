@@ -1,9 +1,9 @@
-use_frameworks!
+#use_frameworks!
 
 platform :ios, '9.0'
 
 target 'HQYPlayer_Example' do
   #pod 'HQYPlayer', :path => '../'
-  pod 'IJKMediaFramework'
-  pod 'TXLiteAVSDK_Player'
+#  pod 'IJKMediaFramework'
+#  pod 'TXLiteAVSDK_Enterprise'
 end
