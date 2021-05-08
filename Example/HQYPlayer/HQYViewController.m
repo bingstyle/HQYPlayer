@@ -8,6 +8,11 @@
 
 #import "HQYViewController.h"
 
+#if __has_include("IJKMediaFramework/IJKMediaFramework.h")
+
+#endif
+
+
 @interface HQYViewController ()
 
 @end

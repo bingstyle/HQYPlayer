@@ -1,0 +1,20 @@
+PODS:
+  - IJKMediaFramework (0.1.5)
+  - TXLiteAVSDK_Player (8.6.10094)
+
+DEPENDENCIES:
+  - IJKMediaFramework
+  - TXLiteAVSDK_Player
+
+SPEC REPOS:
+  trunk:
+    - IJKMediaFramework
+    - TXLiteAVSDK_Player
+
+SPEC CHECKSUMS:
+  IJKMediaFramework: f1119f6324c96bc4654f3045a5beaa95ba0596c0
+  TXLiteAVSDK_Player: 5baf6661d485d3a1d1ba35edb4872215b4300a4b
+
+PODFILE CHECKSUM: bd9f99f4b1f1b7ea839857a7077bc9ef8cf7b7fb
+
+COCOAPODS: 1.9.3

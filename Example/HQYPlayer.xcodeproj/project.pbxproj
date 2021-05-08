@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D4B93E62643C902001F8BC7 /* TXVodPlayerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4B93E52643C902001F8BC7 /* TXVodPlayerProxy.m */; };
+		2DFBB098263C143F003AFB21 /* IJKPlayerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBB092263C143F003AFB21 /* IJKPlayerProxy.m */; };
+		2DFBB0A0263C16C3003AFB21 /* SCPlayerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBB09F263C16C3003AFB21 /* SCPlayerFactory.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +25,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		ADC7B3133CD9E6FCF5852BFC /* Pods_HQYPlayer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F30E5E488923BEBECF04FA6 /* Pods_HQYPlayer_Tests.framework */; };
 		DA7CD7F0092F2103F8116312 /* Pods_HQYPlayer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28B561331B200FE65E5757C /* Pods_HQYPlayer_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27100FC920D816A4D5D61F7B /* HQYPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HQYPlayer.podspec; path = ../HQYPlayer.podspec; sourceTree = "<group>"; };
-		50F4DA180134C8265364E887 /* Pods-HQYPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQYPlayer_Tests.release.xcconfig"; path = "Target Support Files/Pods-HQYPlayer_Tests/Pods-HQYPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		27100FC920D816A4D5D61F7B /* HQYPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HQYPlayer.podspec; path = ../HQYPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2D4B93E42643C902001F8BC7 /* TXVodPlayerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXVodPlayerProxy.h; sourceTree = "<group>"; };
+		2D4B93E52643C902001F8BC7 /* TXVodPlayerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXVodPlayerProxy.m; sourceTree = "<group>"; };
+		2DFBB08F263C143E003AFB21 /* IJKPlayerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKPlayerProxy.h; sourceTree = "<group>"; };
+		2DFBB092263C143F003AFB21 /* IJKPlayerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKPlayerProxy.m; sourceTree = "<group>"; };
+		2DFBB09D263C16C2003AFB21 /* SCMediaPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMediaPlayback.h; sourceTree = "<group>"; };
+		2DFBB09E263C16C2003AFB21 /* SCPlayerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPlayerFactory.h; sourceTree = "<group>"; };
+		2DFBB09F263C16C3003AFB21 /* SCPlayerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPlayerFactory.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HQYPlayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQYPlayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,13 +67,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7F30E5E488923BEBECF04FA6 /* Pods_HQYPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQYPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86D4C3AF37AEBEF0DF9D1C8B /* Pods-HQYPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQYPlayer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HQYPlayer_Tests/Pods-HQYPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C602B799DA7AFA9C3C335B62 /* Pods-HQYPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQYPlayer_Example.debug.xcconfig"; path = "Target Support Files/Pods-HQYPlayer_Example/Pods-HQYPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D28B561331B200FE65E5757C /* Pods_HQYPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQYPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F294B658D362ED3A855B47D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F3B3E8CAFDA98261C0D5AF97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F294B658D362ED3A855B47D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F3B3E8CAFDA98261C0D5AF97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F44DC1BB25DCF80D43DFF891 /* Pods-HQYPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQYPlayer_Example.release.xcconfig"; path = "Target Support Files/Pods-HQYPlayer_Example/Pods-HQYPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,16 +94,47 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				ADC7B3133CD9E6FCF5852BFC /* Pods_HQYPlayer_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DFBB06B263C05A8003AFB21 /* HQYPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2DFBB06C263C05A8003AFB21 /* Classes */,
+				2DFBB074263C05A8003AFB21 /* Assets */,
+			);
+			name = HQYPlayer;
+			path = ../HQYPlayer;
+			sourceTree = "<group>";
+		};
+		2DFBB06C263C05A8003AFB21 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2DFBB09D263C16C2003AFB21 /* SCMediaPlayback.h */,
+				2DFBB09E263C16C2003AFB21 /* SCPlayerFactory.h */,
+				2DFBB09F263C16C3003AFB21 /* SCPlayerFactory.m */,
+				2DFBB08F263C143E003AFB21 /* IJKPlayerProxy.h */,
+				2DFBB092263C143F003AFB21 /* IJKPlayerProxy.m */,
+				2D4B93E42643C902001F8BC7 /* TXVodPlayerProxy.h */,
+				2D4B93E52643C902001F8BC7 /* TXVodPlayerProxy.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2DFBB074263C05A8003AFB21 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				2DFBB06B263C05A8003AFB21 /* HQYPlayer */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for HQYPlayer */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -124,7 +161,6 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				D28B561331B200FE65E5757C /* Pods_HQYPlayer_Example.framework */,
-				7F30E5E488923BEBECF04FA6 /* Pods_HQYPlayer_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,11 +170,11 @@
 			children = (
 				6003F59C195388D20070C39A /* HQYAppDelegate.h */,
 				6003F59D195388D20070C39A /* HQYAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* HQYViewController.h */,
 				6003F5A6195388D20070C39A /* HQYViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for HQYPlayer";
@@ -190,10 +226,7 @@
 			children = (
 				C602B799DA7AFA9C3C335B62 /* Pods-HQYPlayer_Example.debug.xcconfig */,
 				F44DC1BB25DCF80D43DFF891 /* Pods-HQYPlayer_Example.release.xcconfig */,
-				86D4C3AF37AEBEF0DF9D1C8B /* Pods-HQYPlayer_Tests.debug.xcconfig */,
-				50F4DA180134C8265364E887 /* Pods-HQYPlayer_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +241,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				744277EF3AB5CE78443A85C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,11 +255,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "HQYPlayer_Tests" */;
 			buildPhases = (
-				C357A9D9044B6B9F040EFA95 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				90FDB251E25BADC30B93B7FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +279,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = bingstyle;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = YYXDBSZTNV;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +292,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -318,64 +352,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		744277EF3AB5CE78443A85C2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HQYPlayer_Example/Pods-HQYPlayer_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HQYPlayer/HQYPlayer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HQYPlayer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HQYPlayer_Example/Pods-HQYPlayer_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90FDB251E25BADC30B93B7FF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HQYPlayer_Tests/Pods-HQYPlayer_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HQYPlayer_Tests/Pods-HQYPlayer_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C357A9D9044B6B9F040EFA95 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HQYPlayer_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -383,9 +359,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFBB098263C143F003AFB21 /* IJKPlayerProxy.m in Sources */,
 				6003F59E195388D20070C39A /* HQYAppDelegate.m in Sources */,
+				2DFBB0A0263C16C3003AFB21 /* SCPlayerFactory.m in Sources */,
 				6003F5A7195388D20070C39A /* HQYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				2D4B93E62643C902001F8BC7 /* TXVodPlayerProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +492,7 @@
 			baseConfigurationReference = C602B799DA7AFA9C3C335B62 /* Pods-HQYPlayer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YYXDBSZTNV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HQYPlayer/HQYPlayer-Prefix.pch";
 				INFOPLIST_FILE = "HQYPlayer/HQYPlayer-Info.plist";
@@ -529,6 +509,7 @@
 			baseConfigurationReference = F44DC1BB25DCF80D43DFF891 /* Pods-HQYPlayer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YYXDBSZTNV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HQYPlayer/HQYPlayer-Prefix.pch";
 				INFOPLIST_FILE = "HQYPlayer/HQYPlayer-Info.plist";
@@ -542,7 +523,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86D4C3AF37AEBEF0DF9D1C8B /* Pods-HQYPlayer_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -567,7 +547,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50F4DA180134C8265364E887 /* Pods-HQYPlayer_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

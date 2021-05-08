@@ -7,6 +7,7 @@
 //
 
 #import "HQYAppDelegate.h"
+#import "SCPlayerFactory.h"
 
 @implementation HQYAppDelegate
 
