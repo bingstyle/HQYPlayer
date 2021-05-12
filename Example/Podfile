@@ -3,7 +3,7 @@
 platform :ios, '9.0'
 
 target 'HQYPlayer_Example' do
-  #pod 'HQYPlayer', :path => '../'
+#  pod 'HQYPlayer', :path => '../'
 #  pod 'IJKMediaFramework'
-#  pod 'TXLiteAVSDK_Enterprise'
+#  pod 'HQYPlayer/TXLiteAVSDK_Professional'
 end

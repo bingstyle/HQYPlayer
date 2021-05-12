@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HQYPlayer'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of HQYPlayer.'
 
 # This description is used to generate tags and improve search results.
@@ -30,26 +30,34 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'HQYPlayer/Classes/**/*'
   # s.resource_bundles = {
   #   'HQYPlayer' => ['HQYPlayer/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+  s.xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64', }
   s.dependency 'IJKMediaFramework'
   s.default_subspec = 'TXLiteAVSDK_UGC'
   
+  s.subspec "Core" do |ss|
+      ss.source_files = 'HQYPlayer/Classes/**/*'
+      ss.public_header_files = 'HQYPlayer/Classes/**/*.h'
+  end
   s.subspec "TXLiteAVSDK_Player" do |ss|
+      ss.dependency 'HQYPlayer/Core'
       ss.dependency 'TXLiteAVSDK_Player'
   end
   s.subspec "TXLiteAVSDK_Smart" do |ss|
+      ss.dependency 'HQYPlayer/Core'
       ss.dependency 'TXLiteAVSDK_Smart'
   end
   s.subspec "TXLiteAVSDK_Professional" do |ss|
+      ss.dependency 'HQYPlayer/Core'
       ss.dependency 'TXLiteAVSDK_Professional'
   end
   s.subspec "TXLiteAVSDK_UGC" do |ss|
+      ss.dependency 'HQYPlayer/Core'
       ss.dependency 'TXLiteAVSDK_UGC'
   end
   
