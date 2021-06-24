@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HQYPlayer'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A short description of HQYPlayer.'
 
 # This description is used to generate tags and improve search results.
@@ -39,6 +39,7 @@ TODO: Add long description of the pod here.
   s.xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64', }
   s.dependency 'IJKMediaFramework'
   s.default_subspec = 'TXLiteAVSDK_UGC'
+  s.static_framework = true
   
   s.subspec "Core" do |ss|
       ss.source_files = 'HQYPlayer/Classes/**/*'
