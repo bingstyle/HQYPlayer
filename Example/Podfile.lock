@@ -1,27 +1,30 @@
 PODS:
-  - HQYPlayer (0.1.0):
-    - HQYPlayer/TXLiteAVSDK_UGC (= 0.1.0)
+  - HQYPlayer/Core (0.2.5):
     - IJKMediaFramework
-  - HQYPlayer/TXLiteAVSDK_UGC (0.1.0):
+  - HQYPlayer/TXLiteAVSDK_Professional (0.2.5):
+    - HQYPlayer/Core
     - IJKMediaFramework
-    - TXLiteAVSDK_UGC
+    - TXLiteAVSDK_Professional
   - IJKMediaFramework (0.1.5)
-  - TXLiteAVSDK_UGC (8.6.10094)
+  - TXLiteAVSDK_Professional (8.8.10257)
 
 DEPENDENCIES:
-  - HQYPlayer
+  - HQYPlayer/TXLiteAVSDK_Professional (from `../`)
 
 SPEC REPOS:
   trunk:
-    - HQYPlayer
     - IJKMediaFramework
-    - TXLiteAVSDK_UGC
+    - TXLiteAVSDK_Professional
+
+EXTERNAL SOURCES:
+  HQYPlayer:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  HQYPlayer: 06fb55d724e00bc040391b19c6280c9e4a2ba9e9
+  HQYPlayer: f762cf1e0add031576323b27bb607ca42978ac79
   IJKMediaFramework: f1119f6324c96bc4654f3045a5beaa95ba0596c0
-  TXLiteAVSDK_UGC: 8de67ff21e6373d764af1a4b5d1ce89f183780f7
+  TXLiteAVSDK_Professional: ed6a4da59ea748bef7fb297c7e6caed4ba6e1619
 
-PODFILE CHECKSUM: 047490e19e524c3b7bb67975d5c3dc685a95b345
+PODFILE CHECKSUM: 9c3d6019b91a1e4c113b02cbe9a8d92f255f6e32
 
 COCOAPODS: 1.9.3

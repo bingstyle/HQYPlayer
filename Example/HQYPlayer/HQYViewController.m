@@ -11,6 +11,7 @@
 #if __has_include("IJKMediaFramework/IJKMediaFramework.h")
 
 #endif
+#import <SCPlayerFactory.h>
 
 
 @interface HQYViewController ()
@@ -23,6 +24,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    SCPlayerFactory *player = [SCPlayerFactory playerWithType:SCVideoPlayerTypeTXVod frame:self.view.bounds URLString:@"www.baidu.com" videoType:SCVideoTypeOnline];
 }
 
 - (void)didReceiveMemoryWarning

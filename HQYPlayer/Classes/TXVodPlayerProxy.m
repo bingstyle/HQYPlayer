@@ -55,25 +55,33 @@
 #pragma mark - TXVodPlayListener
 - (void)onPlayEvent:(TXVodPlayer *)player event:(int)EvtID withParam:(NSDictionary *)param {
     switch (EvtID) {
-        case PLAY_EVT_PLAY_BEGIN:
+        case PLAY_EVT_PLAY_BEGIN: //视频播放开始，如果有转菊花什么的这个时候该停了
         {
+            _playbackState = SCVideoPlaybackStatePlaying;
+            _loadState = SCVideoLoadStatePlayable;
+            [self loadStateChanged:nil];
             [self playStateChanged:nil];
         } break;
-        case PLAY_EVT_PLAY_END:
+        case PLAY_EVT_PLAY_END: //视频播放结束
         {
+            _playbackState = SCVideoPlaybackStateStopped;
             [self playFinished:param];
         } break;
-        case PLAY_EVT_PLAY_LOADING:
+        case PLAY_ERR_NET_DISCONNECT: //网络断连，且经多次重连亦不能恢复，更多重试请自行重启播放
+        {
+            _playbackState = SCVideoPlaybackStateInterrupted;
+        } break;
+        case PLAY_EVT_PLAY_LOADING: //视频播放 loading，如果能够恢复，之后会有 LOADING_END 事件
         {
             _loadState = SCVideoLoadStateStalled;
             [self loadStateChanged:nil];
         } break;
-        case PLAY_EVT_VOD_LOADING_END:
+        case PLAY_EVT_VOD_LOADING_END: //视频播放 loading 结束，视频继续播放
         {
             _loadState = SCVideoLoadStatePlayable;
             [self loadStateChanged:nil];
         } break;
-        case PLAY_EVT_VOD_PLAY_PREPARED:
+        case PLAY_EVT_VOD_PLAY_PREPARED: //播放器已准备完成，可以播放
         {
             [self preparedToPlayChanged:nil];
         } break;
@@ -200,7 +208,7 @@
 
 - (SCVideoPlayerType)playerType
 {
-    return SCVideoPlayerTypeIJK;
+    return SCVideoPlayerTypeTXVod;
 }
 
 - (SCVideoLoadState)loadState

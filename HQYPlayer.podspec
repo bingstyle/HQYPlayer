@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HQYPlayer'
-  s.version          = '0.2.5'
+  s.version          = '0.3.0'
   s.summary          = 'A short description of HQYPlayer.'
 
 # This description is used to generate tags and improve search results.
